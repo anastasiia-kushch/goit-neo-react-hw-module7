@@ -5,7 +5,7 @@ import {
   addContact,
   editContact,
 } from './contactsOps';
-import { selectNameFilter } from '../filters/filtersSlice';
+import { selectNameFilter } from './filtersSlice';
 
 const slice = createSlice({
   name: 'contacts',
@@ -51,7 +51,6 @@ const slice = createSlice({
       .addCase(addContact.fulfilled, (state, action) => {
         state.items.push(action.payload);
         state.loading = false;
-
       })
       .addCase(addContact.rejected, (state) => {
         state.loading = false;

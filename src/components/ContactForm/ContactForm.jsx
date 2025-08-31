@@ -1,6 +1,6 @@
 import { useId } from 'react';
 import { useDispatch } from 'react-redux';
-import { addContact } from '../../redux/contacts/contactsOps';
+import { addContact } from '../../redux/contactsOps';
 
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import * as Yup from 'yup';
@@ -38,7 +38,7 @@ export default function ContactForm() {
     )
       .unwrap()
       .then(() => toast.success('Contact added!'))
-      .catch(() => toast.error('Oops... Try again!'));;
+      .catch(() => toast.error('Oops... Try again!'));
     actions.resetForm();
   };
 

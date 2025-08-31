@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteContact } from '../../redux/contacts/contactsOps';
+import { deleteContact } from '../../redux/contactsOps';
 
 import { IoPerson } from 'react-icons/io5';
 import { IoCall } from 'react-icons/io5';
@@ -7,7 +7,7 @@ import { IoCall } from 'react-icons/io5';
 import css from './Contact.module.css';
 import { useState } from 'react';
 import toast from 'react-hot-toast';
-import { selectError, selectLoading } from '../../redux/contacts/contactsSlice';
+import { selectError, selectLoading } from '../../redux/contactsSlice';
 
 export default function Contact({ data: { id, name, number } }) {
   const [isEditing, setIsEditing] = useState(false);
