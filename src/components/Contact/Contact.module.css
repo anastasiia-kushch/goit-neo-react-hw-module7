@@ -1,0 +1,36 @@
+.contactContainer {
+  width: 260px;
+  padding: 8px;
+
+  border: 1px solid #242428;
+  border-radius: 6px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.button {
+  padding: 4px 6px;
+  border: 1px solid #242428;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ededfd;
+}
+

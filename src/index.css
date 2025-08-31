@@ -1,0 +1,32 @@
+:root {
+  font-family: Montserrat, sans-serif;
+  line-height: 1.4;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 12px;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  height: min-content;
+  cursor: pointer;
+  font: inherit;
+}
